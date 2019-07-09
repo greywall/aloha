@@ -1,0 +1,455 @@
+/* Extra Reset */
+
+/* This helps with flex box and spacing */
+
+* {
+    /* border: 1px dashed black !important; */
+    /*remember this remove this imporant*/
+    box-sizing: border-box;
+}
+
+* ::before ::after {
+    /* box-sizing: border-box; */
+    /* box-sizing: inherit; */
+    /* border: 1px dashed black !important; */
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Master CSS over all sections  */
+
+section {
+    padding: 40px 0;
+}
+
+/* typography   */
+
+/* html, body {
+    font-size: 14px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #d2d2d2;
+    line-height: 1.5;
+} */
+
+html, body {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+body {
+    max-width: 1240px;
+}
+
+h1, h2, h3 {
+    font-family: serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 span {
+    font-weight: bold;
+    font-style: normal;
+}
+
+h3 {
+    font-weight: 1.5rem;
+}
+
+.main-nav a {
+    color: #e2574c;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* This makes the header elements inline */
+
+.main-nav li {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-container {
+    align-self: flex-end;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-image {
+    align-self: flex-start;
+    flex-basis: 150px;
+}
+
+.cart-logo {
+    align-self: flex-end;
+    flex-basis: 50px;
+}
+
+/* This applies to span tags that make text bold */
+
+.bold-word {
+    font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero-banner {
+    border: 1px solid black;
+    height: 675px;
+    max-width: 1240px;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.new-collection {
+    font-size: 36px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.season {
+    font-size: 46px;
+    text-align: center;
+    color: white;
+}
+
+/*Hero - Banner - Need to adjust size of the girl. 0% for linear gradient is where it starts*/
+
+.hero-banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/banner-girl.png) no-repeat center 70px, url(images/flower-bkgd.jpg) repeat-x center top;
+    background-size: cover, 150px 369px, cover;
+    height: 400px;
+}
+
+/* This is for the title container section */
+
+.title-container {
+    text-align: center;
+    color: black;
+}
+
+/* Update Section - Change the background */
+
+.update-message {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.update-section {
+    background: url(images/wave-bkgd.jpg) no-repeat bottom;
+    background-size: auto;
+    text-align: center;
+    color: white;
+}
+
+input[type=submit] {
+    border: none !important;
+    border-radius: 30px;
+    background-color: #e2574c;
+    color: white;
+    padding: .30rem .75rem ;
+}
+
+.form-holder {
+    border-color: white;
+    border-radius: 30px;
+    padding: 3px;
+    background-color: white;
+    width: 54%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+input[type=email] {
+    border: none !important;
+    border-radius: 15px;
+    color: black;
+    /* padding-right: 20px; */
+    padding: 7px;
+}
+
+/* For the footer section - Add a black background */
+
+.footer-section {
+    background: #242424;
+    padding: 3rem;
+}
+
+.footer-section {
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-address {
+    color: #969696;
+}
+
+.footer-social li {
+    display: inline;
+}
+
+.footer-social span {
+    display: none;
+}
+
+.footer-content p, .footer-content li {
+    padding: 5px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.email-display {
+    text-decoration: underline;
+}
+
+/* section for page containers
+12
+
+smaller- container for max width for smaller containers */
+
+/* Header
+min widght */
+
+a:hover {
+    color: #b64036
+}
+
+/* Banner */
+
+/* About Area */
+
+/* Category */
+
+.featured-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+
+.mens-featured {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/mens-category.jpg) no-repeat 50% 50%;
+    height: 50vh;
+    width: 50vw;
+    background-size: cover;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.trends-featured {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/trends-category.jpg) no-repeat 50%;
+    background-size: cover, cover;
+    height: 50vh;
+    width: 25vw;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.glasses-featured {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/glasses-category.jpg) no-repeat;
+    height: 50vh;
+    width: 25vw;
+    background-size: cover, cover;
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.sale-featured {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/sale-category.jpg) no-repeat;
+    height: 50vh;
+    width: 25vw;
+    background-size: cover, cover;
+    order: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.bags-featured {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/bags-category.jpg) no-repeat;
+    height: 50vh;
+    width: 25vw;
+    background-size: cover, cover;
+    order: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.womens-featured {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/womens-category.jpg) no-repeat;
+    height: 50vh;
+    width: 25vw;
+    background-size: cover, cover;
+    order: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.featured-section div {
+    border: 4px solid white !important;
+}
+
+.featured-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.featured-section a:hover {
+    color: #f5ebc6;
+}
+
+/* <div><img src="" alt="Mens"></div>
+<div><img src="images/trends-category.jpg" alt="Trends"></div>
+<div><img src="images/glasses-category.jpg" alt="Glasses"></div>
+<div><img src="images/sale-category.jpg" alt="Sale"></div>
+<div><img src="images/bags-category.jpg" alt="Bags"></div>
+<div><img src="images/womens-category.jpg" alt="Women's"></div> */
+
+/* Product Section */
+
+.product-section-title {
+    text-align: center;
+}
+
+.product-slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-slider p {
+    text-align: center;
+}
+
+/* Footer */
+
+/* Tablet width*/
+
+@media screen and (min-width: 600px) {
+    .footer-social span {
+        display: inline
+    }
+    .footer-content {
+        display: flex;
+    }
+    .footer-content {
+        flex-direction: row;
+    }
+    .footer-content {
+        justify-content: space-between;
+    }
+    .footer-content {
+        text-align: left;
+    }
+    .footer-social li {
+        display: block;
+    }
+    .mens-featured, .womens-featured {
+        height: 25vh;
+        width: 25vw;
+        flex-basis: 50%;
+    }
+    .trends-featured, .glasses-featured, .sale-featured, .bags-featured {
+        height: 25vh;
+        width: 25vw;
+        flex-basis: 25%;
+    }
+    .header-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: none;
+        flex-basis: auto;
+    }
+    .logo-image {
+        order: 1;
+        align-self: flex-start;
+    }
+    .nav-container {
+        order: 2;
+        align-self: center;
+    }
+    .cart-logo {
+        order: 3;
+        align-self: flex-end;
+    }
+    .form-holder {
+        width: 25%;
+    }
+}
+
+/* End of tablet */
+
+c
+/* Desktop*/
+
+@media screen and (min-width: 1240px) {
+    .mens-featured, .womens-featured {
+        height: 25%;
+        width: 50vw;
+        flex-basis: 50%;
+    }
+    .trends-featured, .glasses-featured, .sale-featured, .bags-featured {
+        height: 50%;
+        width: 100vw;
+        flex-basis: 25%;
+    }
+    .form-holder {
+        width: 25%;
+    }
+}
