@@ -3,7 +3,7 @@
 /* This helps with flex box and spacing */
 
 * {
-    /* border: 1px dashed black !important; */
+    border: 1px dashed black !important;
     /*remember this remove this imporant*/
     box-sizing: border-box;
 }
@@ -168,30 +168,31 @@ img {
     color: white;
 }
 
-input[type=submit] {
-    border: none !important;
-    border-radius: 30px;
-    background-color: #e2574c;
-    color: white;
-    padding: .30rem .75rem ;
 }
 
 .form-holder {
     border-color: white;
     border-radius: 30px;
-    padding: 3px;
+    padding: 30px;
     background-color: white;
-    width: 54%;
+    /* width: 54%; */
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+}
+
+input[type=submit] {
+    border: none !important; /*Remove this after removeing testing border*/
+    border-radius: 30px;
+    background-color: #e2574c;
+    color: white;
+    padding: .30rem .75rem;
 }
 
 input[type=email] {
-    border: none !important;
+    border: none !important; /*Remove this after removeing testing border*/
     border-radius: 15px;
     color: black;
     /* padding-right: 20px; */
@@ -267,7 +268,6 @@ a:hover {
     flex-wrap: wrap;
     color: white;
 }
-
 
 .mens-featured {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/mens-category.jpg) no-repeat 50% 50%;
@@ -429,13 +429,15 @@ a:hover {
         align-self: flex-end;
     }
     .form-holder {
-        width: 25%;
+        
+        min-width: 34%;
+        padding: 2px;
     }
 }
 
 /* End of tablet */
 
-c
+
 /* Desktop*/
 
 @media screen and (min-width: 1240px) {
@@ -450,6 +452,6 @@ c
         flex-basis: 25%;
     }
     .form-holder {
-        width: 25%;
+        max-width: 1050%;
     }
 }
