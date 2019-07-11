@@ -3,20 +3,12 @@
 /* This helps with flex box and spacing */
 
 * {
-    border: 1px dashed black !important;
+    /* border: 1px dashed black !important; */
     /*remember this remove this imporant*/
     box-sizing: border-box;
 }
 
-* ::before ::after {
-    /* box-sizing: border-box; */
-    /* box-sizing: inherit; */
-    /* border: 1px dashed black !important; */
-}
 
-html {
-    font-size: 16px;
-}
 
 /* Master CSS over all sections  */
 
@@ -26,36 +18,43 @@ section {
 
 /* typography   */
 
-/* html, body {
+@font-face {
+    font-family: "Raleway Light";
+    src: local("Raleway");
+  }
+
+@font-face {
+    font-family: "Playfair Display";
+    src: local("Playfair");
+  }
+
+
+
+html {
     font-size: 14px;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #d2d2d2;
-    line-height: 1.5;
+}
+
+/* body p {
+    font-family: 'Raleway', Arial, sans-serif ;
 } */
 
-html, body {
-    font-family: 'Raleway', Arial, sans-serif;
-}
 
 body {
     max-width: 1240px;
+    margin: 0 auto;
 }
 
-h1, h2, h3 {
-    font-family: serif;
-    font-weight: normal;
-    font-style: normal;
-}
+/* h1, h2,{
+    font-family: 'Playfair', Arial, sans-serif;
+} */
 
-h2 span {
+.transform-bold {
     font-weight: bold;
     font-style: normal;
 }
 
-h3 {
-    font-weight: 1.5rem;
+.transform-italics {
+    font-style: italic; 
 }
 
 .main-nav a {
@@ -69,7 +68,9 @@ h3 {
 
 .main-nav li {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1rem;
+    padding: 15px;
+    font-family: 'Raleway', Arial, sans-serif ;
 }
 
 .header-container {
@@ -77,12 +78,17 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0px 15px;
 }
 
 .nav-container {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     flex-basis: 100%;
+    justify-content: center;
     text-align: center;
+    border-top: solid #969696 1px;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
 }
 
 img {
@@ -102,9 +108,6 @@ img {
 
 /* This applies to span tags that make text bold */
 
-.bold-word {
-    font-weight: bold;
-}
 
 .container {
     margin: 0 auto;
@@ -126,15 +129,16 @@ img {
 }
 
 .new-collection {
-    font-size: 36px;
+    font-size: 1.5rem;
     margin-bottom: 35px;
     text-align: center;
     color: white;
     text-transform: uppercase;
+    font-family: 'Raleway', Arial, sans-serif ;
 }
 
 .season {
-    font-size: 46px;
+    font-size: 3rem;
     text-align: center;
     color: white;
 }
@@ -168,35 +172,32 @@ img {
     color: white;
 }
 
-}
-
 .form-holder {
-    border-color: white;
-    border-radius: 30px;
-    padding: 30px;
-    background-color: white;
-    /* width: 54%; */
     margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 60%;
+    max-width: 300px;
+    position: relative;
 }
 
 input[type=submit] {
-    border: none !important; /*Remove this after removeing testing border*/
-    border-radius: 30px;
+    border: none !important;
+    /*Remove this after removeing testing border*/
+    border-radius: 35px;
     background-color: #e2574c;
     color: white;
-    padding: .30rem .75rem;
+    padding: .55rem .65rem;
+    position: absolute;
+    top: 3px;
+    right: 3px;
 }
 
 input[type=email] {
-    border: none !important; /*Remove this after removeing testing border*/
-    border-radius: 15px;
+    border: none !important;
+    /*Remove this after removeing testing border*/
+    border-radius: 35px;
     color: black;
-    /* padding-right: 20px; */
-    padding: 7px;
+    padding: 12px;
+    width: 100%;
 }
 
 /* For the footer section - Add a black background */
@@ -259,6 +260,15 @@ a:hover {
 
 /* About Area */
 
+.about-title {
+    font-size: 3rem;
+}
+
+.about-message, .update-message {
+    font-size: 1.5rem;
+    font-family: 'Raleway', Arial, sans-serif ;
+}
+
 /* Category */
 
 .featured-section {
@@ -267,12 +277,13 @@ a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     color: white;
+    font-size: 3rem;
 }
 
 .mens-featured {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/mens-category.jpg) no-repeat 50% 50%;
     height: 50vh;
-    width: 50vw;
+    /* width: 50vw; */
     background-size: cover;
     order: 1;
     display: flex;
@@ -363,8 +374,9 @@ a:hover {
 
 /* Product Section */
 
-.product-section-title {
+.product-section-title, .signup-title {
     text-align: center;
+    font-size: 3rem;
 }
 
 .product-slider {
@@ -400,12 +412,14 @@ a:hover {
         display: block;
     }
     .mens-featured, .womens-featured {
-        height: 25vh;
+        height: 50vh;
+        max-height: 200px;
         width: 25vw;
         flex-basis: 50%;
     }
     .trends-featured, .glasses-featured, .sale-featured, .bags-featured {
-        height: 25vh;
+        height: 50vh;
+        max-height: 200px;
         width: 25vw;
         flex-basis: 25%;
     }
@@ -415,6 +429,7 @@ a:hover {
         flex-direction: row;
         justify-content: none;
         flex-basis: auto;
+        
     }
     .logo-image {
         order: 1;
@@ -423,35 +438,37 @@ a:hover {
     .nav-container {
         order: 2;
         align-self: center;
+        border-top: none;
+        flex-basis: 100%;
     }
     .cart-logo {
         order: 3;
         align-self: flex-end;
     }
     .form-holder {
-        
-        min-width: 34%;
-        padding: 2px;
+        width: 40%;
+        padding: 0px;
+    }
+    html {
+        font-size: 16px;
+    }
+    .header-container {
+        padding: 0px 15px 5px 15px;
     }
 }
 
 /* End of tablet */
 
-
 /* Desktop*/
 
 @media screen and (min-width: 1240px) {
-    .mens-featured, .womens-featured {
-        height: 25%;
-        width: 50vw;
-        flex-basis: 50%;
-    }
-    .trends-featured, .glasses-featured, .sale-featured, .bags-featured {
-        height: 50%;
-        width: 100vw;
-        flex-basis: 25%;
-    }
-    .form-holder {
-        max-width: 1050%;
-    }
+ .shape-rectangle {
+    height: 300px;
+    max-height: none;
+ }
+
+ .shape-square {
+    height: 300px;
+    max-height: none;
+ }
 }
