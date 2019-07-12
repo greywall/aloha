@@ -95,8 +95,6 @@ img {
     height: auto;
 }
 
-
-
 /* This applies to span tags that make text bold */
 
 .container {
@@ -357,14 +355,15 @@ a:hover {
     font-size: 3rem;
 }
 
-.product-slider {
+/* .product-slider {
     display: flex;
     flex-direction: row;
-}
+} */
 
-.product-slider p {
+/* .product-slider p {
     text-align: center;
-}
+} This code is not needed - test
+*/
 
 /* mobile style */
 
@@ -414,11 +413,13 @@ a:hover {
         flex-direction: row;
         justify-content: none;
         flex-basis: auto;
-        padding: 100rem 0rem;
+        padding-bottom: 100rem;
     }
     .logo-image {
         order: 1;
         align-self: flex-start;
+    }
+    .logo-image img {
         max-width: 120px;
     }
     .nav-container {
@@ -430,24 +431,26 @@ a:hover {
     .cart-logo {
         order: 3;
         align-self: flex-end;
-        flex-basis: 50px;
+        width: 50px;
     }
-    
     .form-holder {
         width: 40%;
         padding: 0px;
     }
     html {
         font-size: 16px;
+        scroll-behavior: smooth;
     }
     .header-container {
-        padding: 0px 15px 5px 15px;
+        padding: 10px 15px 5px 15px;
     }
-    /* media query example */
-    @media screen and (min-width: 600px) {
-        .carousel-cell {
-            width: 25%;
-        }
+}
+
+/* media query example */
+
+@media screen and (min-width: 600px) {
+    .carousel-cell {
+        width: 25%;
     }
 }
 
@@ -472,3 +475,7 @@ a:hover {
         align-self: flex-start;
         max-width: 160px;
     }
+    .cart-logo {
+        width: 65px;
+    }
+}

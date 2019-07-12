@@ -1,3 +1,5 @@
+Contain a README.md file describing the project (e.g. technologies used, personal learnings, installation instructions, etc.) and is appropriately formatted with Markdown
+
 # Aloha project
 
 This project is the first project for the web dev program, showcasing responsive web development using HTML, CSS and Javascript.
