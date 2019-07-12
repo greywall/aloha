@@ -40,10 +40,13 @@ html {
 
 
 body {
-    max-width: 1240px;
+    /* max-width: 1240px; */
     margin: 0 auto;
 }
 
+.control-maxwidth {
+    max-width: 1240px;
+}
 /* h1, h2,{
     font-family: 'Playfair', Arial, sans-serif;
 } */
@@ -170,6 +173,7 @@ img {
     background-size: auto;
     text-align: center;
     color: white;
+    height: 340px;
 }
 
 .form-holder {
@@ -365,12 +369,7 @@ a:hover {
     color: #f5ebc6;
 }
 
-/* <div><img src="" alt="Mens"></div>
-<div><img src="images/trends-category.jpg" alt="Trends"></div>
-<div><img src="images/glasses-category.jpg" alt="Glasses"></div>
-<div><img src="images/sale-category.jpg" alt="Sale"></div>
-<div><img src="images/bags-category.jpg" alt="Bags"></div>
-<div><img src="images/womens-category.jpg" alt="Women's"></div> */
+
 
 /* Product Section */
 
@@ -387,6 +386,13 @@ a:hover {
 .product-slider p {
     text-align: center;
 }
+
+/* mobile style */
+.carousel-cell {
+    width: 100%;
+    text-align: center;
+    
+  }
 
 /* Footer */
 
@@ -455,6 +461,12 @@ a:hover {
     .header-container {
         padding: 0px 15px 5px 15px;
     }
+    /* media query example */
+@media screen and (min-width: 600px) {
+    .carousel-cell {
+      width: 25%;
+    }
+  }
 }
 
 /* End of tablet */

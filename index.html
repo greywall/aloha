@@ -7,6 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aloha Apparel Co.</title>
 
+
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Link to flickity Plugin CSS -->
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Link to flickity plug Javascript -->
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Link to the Page Icon -->
 
@@ -27,7 +35,7 @@
 <body>
 
     <!-- This is the header section-->
-    <header class="header-container">
+    <header class="container header-container control-maxwidth">
 
         <div class="header-section logo-image">
             <img src="images/aloha-logo.svg" alt="logo">
@@ -54,7 +62,7 @@
     </section>
 
     <!-- About - This is the Second Titlesection-->
-    <section class="container title-container" id="about">
+    <section class="container title-container control-maxwidth" id="about">
         <h2 class="about-title"> <span class="transform-italics">Hand-Crafted </span><span
                 class="transform-bold">Styles</span>
         </h2>
@@ -95,32 +103,70 @@
 
 
     <!-- This section is the product Slider-->
-    <section class="container product-section" id="shop">
+    <section class="container product-section control-maxwidth" id="shop">
         <h2 class="product-section-title"> <span class="transform-italics"> Most-Loved </span> <span
                 class="transform-bold">Products</span>
-            </h2>
-        <ul class="product-slider">
-            <li><img src="images/checked-stretch-dress.jpg" alt="Checked-Stretch-Dress">
-                <p>Dresses</p>
-                <p>Checked Stretch Dresses</p>
-                <p>$129.00</p>
-            </li>
-            <li><img src="images/blue-hipster-backpack.jpg" alt="Blue-Hipster-Backpack">
-                <p>Bags</p>
-                <p>Blue Hipster Backpack</p>
-                <p>$69.00</p>
-            </li>
-            <li><img src="images/demin-overall-shorts.jpg" alt="Demin-Overall-Shorts">
-                <p>Demin</p>
-                <p>Demin Overall Shorts</p>
-                <p>$89.00</p>
-            </li>
-            <li><img src="images/pink-dotted-dress.jpg" alt="Pink-Dotted-Dress">
-                <p>Dresses</p>
-                <p>Pink Dotted Dress</p>
-                <p>$99.00</p>
-            </li>
-        </ul>
+        </h2>
+        <div class="main-carousel">
+            <div class="carousel-cell product-slider">
+                <div><img src="images/checked-stretch-dress.jpg" alt="Checked-Stretch-Dress">
+                    <p>Dresses</p>
+                    <p>Checked Stretch Dresses</p>
+                    <p>$129.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div><img src="images/blue-hipster-backpack.jpg" alt="Blue-Hipster-Backpack">
+                    <p>Bags</p>
+                    <p>Blue Hipster Backpack</p>
+                    <p>$69.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div><img src="images/demin-overall-shorts.jpg" alt="Demin-Overall-Shorts">
+                    <p>Demin</p>
+                    <p>Demin Overall Shorts</p>
+                    <p>$89.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div><img src="images/pink-dotted-dress.jpg" alt="Pink-Dotted-Dress">
+                    <p>Dresses</p>
+                    <p>Pink Dotted Dress</p>
+                    <p>$99.00</p>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <div><img src="images/stretch-knit-dress.jpg" alt="Stretch-Knit-Dress">
+                    <p>Dresses</p>
+                    <p>Stretch Knit Dress</p>
+                    <p>$169.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div><img src="images/cotton-blue-shirt.jpg" alt="Cotton-Blue-Shirt">
+                    <p>Dresses</p>
+                    <p>Cotton Blue Shirt</p>
+                    <p>$89.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div><img src="images/blue-silk-dress.jpg" alt="Blue-Silk-Dress">
+                    <p>Dresses</p>
+                    <p>Blue Silk Dress</p>
+                    <p>$119.00</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div><img src="images/cotton-yellow-tshirt.jpg" alt="Cotton-Yellow-Shift">
+                    <p>Dresses</p>
+                    <p>Cotton Yellow Shift</p>
+                    <p>$39.00</p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- This is the Updates Section-->
@@ -132,9 +178,9 @@
             from our blog. Unsubscribe at any time.</p>
 
         <!-- <div class="">delete this later -->
-        <form action="#" class="form-holder">
+        <form class="form-holder" id="email-form">
             <input type="email" name="email" id="emailaddress" placeholder="Your Email">
-            <input type="Submit" value="Subscribe" id="submit-email">
+            <input type="submit" value="Subscribe" id="submit-email">
         </form>
         </div>
 
@@ -142,7 +188,7 @@
 
     <!-- This is the Footer Section-->
     <footer class="footer-section">
-        <div class="container footer-content">
+        <div class="container footer-content control-maxwidth">
             <div class="company-info">
                 <p>&#9400;2019 Aloha Apparel Co. <br />
                     Powered by HTML and CSS.</p>
@@ -173,7 +219,7 @@
             </Ul>
         </div>
     </footer>
-
+    <script src="javascript.js"></script>
 </body>
 
 </html>
