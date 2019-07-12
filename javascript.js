@@ -19,11 +19,6 @@ alert('Please enter a valid email.')
 }
 })
 
-document.querySelector('.about-nav').scrollIntoView({ 
-    behavior: 'smooth' 
-  });
-
-
 // Flicity Carosal
 const elem = document.querySelector('.main-carousel');
 const flkty = new Flickity( elem, {

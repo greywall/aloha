@@ -3,7 +3,7 @@
 /* This helps with flex box and spacing */
 
 * {
-    /* border: 1px dashed black !important; */
+    border: 1px dashed black !important;
     /*remember this remove this imporant*/
     box-sizing: border-box;
 }
@@ -11,7 +11,8 @@
 /* Master CSS over all sections  */
 
 section {
-    padding: 40px 0;
+    /* padding: 40px 0; */
+    padding: 2rem 0rem;
 }
 
 /* typography   */
@@ -28,6 +29,7 @@ section {
 
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 /* body p {
@@ -80,6 +82,23 @@ body {
     padding: 0px 15px;
 }
 
+.logo-image {
+    order: 1;
+    align-self: flex-start;
+}
+
+.logo-image img {
+    /* max-width: 120px; */
+    width: 120px;
+    height: 50px;
+}
+
+.cart-logo {
+    order: 2;
+    align-self: flex-end;
+    width: 50px;
+}
+
 .nav-container {
     /* align-self: flex-end; */
     flex-basis: 100%;
@@ -88,6 +107,7 @@ body {
     border-top: solid #969696 1px;
     align-items: center;
     padding: 0px 10px 0px 10px;
+    order: 3;
 }
 
 img {
@@ -414,6 +434,7 @@ a:hover {
         justify-content: none;
         flex-basis: auto;
         padding-bottom: 100rem;
+        padding: 10px 15px 5px 15px;
     }
     .logo-image {
         order: 1;
@@ -439,10 +460,6 @@ a:hover {
     }
     html {
         font-size: 16px;
-        scroll-behavior: smooth;
-    }
-    .header-container {
-        padding: 10px 15px 5px 15px;
     }
 }
 
@@ -450,7 +467,7 @@ a:hover {
 
 @media screen and (min-width: 600px) {
     .carousel-cell {
-        width: 25%;
+        width: 50%;
     }
 }
 
@@ -469,13 +486,22 @@ a:hover {
     }
     .hero-banner {
         height: 550px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/banner-girl.png) no-repeat center 60px, url(images/flower-bkgd.jpg) repeat-x top;
+        background-size: cover, 250px 615px, contain;
+        
     }
     .logo-image {
         order: 1;
         align-self: flex-start;
-        max-width: 160px;
+        width: 160px;
+        height: 60px;
     }
     .cart-logo {
         width: 65px;
     }
 }
+
+@media screen and (min-width: 1240px) {
+    .carousel-cell {
+        width: 25%;
+    }
