@@ -281,6 +281,7 @@ a:hover {
     flex-wrap: wrap;
     color: white;
     font-size: 3rem;
+    text-transform: uppercase;
 }
 
 .mens-featured {
@@ -369,6 +370,23 @@ a:hover {
 }
 
 /* Product Section */
+.featured-product-category {
+    color: #969699;
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: uppercase    
+}
+.featured-product-name {
+    color: #e2574c;
+    font-size: 1.5rem;
+    font-weight: 100;
+} 
+.featured-product-price {
+    color: #969696;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
 
 .product-section-title, .signup-title {
     text-align: center;

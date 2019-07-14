@@ -5,6 +5,18 @@ Contain a README.md file describing the project (e.g. technologies used, persona
 This project is the first project for the web dev program, showcasing responsive web development using HTML, CSS and Javascript.
 
 
+Current Version
+1.001/
+
+
+Future Versions
+v1.002/Featured Section Paragraph and Heading Styling Updated
+v2.0/Typeface and Font sizes Matching Design Requirements
+v3.0/Padding and Spacing Matching Design Requirements
+v3.0/Remove Border from Product section
+v4.0/Add Fixed Header for Mobile, Tablet and Desktop
+v5.0/Add icon to cart icon that shows number of clicks on products added to cart
+
 
 ## Project title
 A little info about your project and/ or overview that explains **what** the project is about.
