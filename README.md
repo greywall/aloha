@@ -7,14 +7,15 @@ This project is the first project for the web dev program, showcasing responsive
 
 Current Version
 1.001/
+v1.002/Featured Section Paragraph and Heading Styling Updated
 
 
 Future Versions
-v1.002/Featured Section Paragraph and Heading Styling Updated
-v2.0/Typeface and Font sizes Matching Design Requirements
-v3.0/Padding and Spacing Matching Design Requirements
-v3.0/Remove Border from Product section
+
+v2.0/Typeface and Font sizes Matching Design Requirements Padding and Spacing Matching Design Requirements
+v3.001/Remove Border from Product section
 v4.0/Add Fixed Header for Mobile, Tablet and Desktop
+v4.0/001 Cart Icon and Aloha logo size fix
 v5.0/Add icon to cart icon that shows number of clicks on products added to cart
 
 

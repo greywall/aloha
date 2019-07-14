@@ -3,7 +3,7 @@
 /* This helps with flex box and spacing */
 
 * {
-    border: 1px dashed black !important;
+    /* border: 1px dashed black !important; */
     /*remember this remove this imporant*/
     box-sizing: border-box;
 }
@@ -11,8 +11,7 @@
 /* Master CSS over all sections  */
 
 section {
-    /* padding: 40px 0; */
-    padding: 2rem 0rem;
+    padding: 1.80rem 0rem;
 }
 
 /* typography   */
@@ -131,8 +130,8 @@ img {
 }
 
 .new-collection {
-    font-size: 1.5rem;
-    margin-bottom: 35px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -140,9 +139,10 @@ img {
 }
 
 .season {
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: center;
     color: white;
+    font-family: "Playfair Display";
 }
 
 /*Hero - Banner - Need to adjust size of the girl. 0% for linear gradient is where it starts*/
@@ -158,6 +158,7 @@ img {
 .title-container {
     text-align: center;
     color: black;
+    padding: 4rem;
 }
 
 /* Update Section - Change the background */
@@ -263,12 +264,21 @@ a:hover {
 
 /* About Area */
 
+.about-text {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
 .about-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+    font-family: 'Playfair Display', Arial, sans-serif;
 }
 
 .about-message, .update-message {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 2;
+    font-weight: 100;
     font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -479,6 +489,9 @@ a:hover {
     html {
         font-size: 16px;
     }
+    .season {
+        font-size: 3rem;
+    }
 }
 
 /* media query example */
@@ -516,6 +529,9 @@ a:hover {
     }
     .cart-logo {
         width: 65px;
+    }
+    .season {
+        font-size: 4rem;
     }
 }
 
