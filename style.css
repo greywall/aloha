@@ -1,18 +1,32 @@
 /* Extra Reset */
 
 /* This helps with flex box and spacing */
-
 * {
     /* border: 1px dashed black !important; */
-    /*remember this remove this imporant*/
+    /*The code above can be turned on and off to create borders for different sections for testing.*/
     box-sizing: border-box;
 }
 
-/* Master CSS over all sections  */
+/* Master over all sections  */
 
 section {
     padding: 1.80rem 0rem;
 }
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+.control-maxwidth {
+    max-width: 1240px;
+}
+
 
 /* typography   */
 
@@ -26,28 +40,6 @@ section {
     src: local("Playfair");
 }
 
-html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-}
-
-/* body p {
-    font-family: 'Raleway', Arial, sans-serif ;
-} */
-
-body {
-    /* max-width: 1240px; */
-    margin: 0 auto;
-}
-
-.control-maxwidth {
-    max-width: 1240px;
-}
-
-/* h1, h2,{
-    font-family: 'Playfair', Arial, sans-serif;
-} */
-
 .transform-bold {
     font-weight: bold;
     font-style: normal;
@@ -57,19 +49,20 @@ body {
     font-style: italic;
 }
 
+/* This is for the main navigation */
+
 .main-nav a {
     color: #e2574c;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    font-weight: 2000;
 }
 
 /* This makes the header elements inline */
 
 .main-nav li {
     display: inline-block;
-    font-size: .9rem;
+    font-size: 1rem;
     padding: 15px;
     font-family: 'Raleway', Arial, sans-serif;
 }
@@ -146,7 +139,7 @@ img {
     font-family: "Playfair Display";
 }
 
-/*Hero - Banner - Need to adjust size of the girl. 0% for linear gradient is where it starts*/
+/* Hero - Banner  */
 
 .hero-banner {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/banner-girl.png) no-repeat center 70px, url(images/flower-bkgd.jpg) repeat-x center top;
@@ -154,8 +147,7 @@ img {
     height: 400px;
 }
 
-/* This is for the title container section */
-
+/* This is for the About container section */
 .title-container {
     text-align: center;
     color: black;
@@ -163,7 +155,6 @@ img {
 }
 
 /* Update Section - Change the background */
-
 .update-message {
     margin: 0 auto;
     padding: 0px 5px;
@@ -215,7 +206,7 @@ input[type=email] {
     width: 100%;
 }
 
-/* For the footer section - Add a black background */
+/* For the footer section */
 
 .footer-section {
     background: #242424;
@@ -246,6 +237,7 @@ input[type=email] {
     color: white;
 }
 
+/* Footer Section */
 .footer-social a {
     text-decoration: none;
     color: white;
@@ -278,19 +270,9 @@ input[type=email] {
     text-decoration: underline;
 }
 
-/* section for page containers
-12
-
-smaller- container for max width for smaller containers */
-
-/* Header
-min widght */
-
 a:hover {
     color: #b64036
 }
-
-/* Banner */
 
 /* About Area */
 
@@ -312,7 +294,7 @@ a:hover {
     font-family: 'Raleway', Arial, sans-serif;
 }
 
-/* Category */
+/* Product Category */
 
 .featured-section {
     display: flex;
@@ -455,17 +437,6 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* .product-slider {
-    display: flex;
-    flex-direction: row;
-} */
-
-/* .product-slider p {
-    text-align: center;
-} This code is not needed - test
-*/
-
-/* mobile style */
 
 .carousel-cell {
     width: 100%;
@@ -475,9 +446,9 @@ a:hover {
     font-weight: 200;
 }
 
-/* Footer */
 
-/* Tablet width*/
+
+/* For the Tablet width breakpoint*/
 
 @media screen and (min-width: 600px) {
     .footer-social span {
@@ -587,9 +558,9 @@ a:hover {
     }
 }
 
-/* End of tablet */
+/* End of tablet breakpoint*/
 
-/* Desktop*/
+/* This is for the Desktop Breakpoint*/
 
 @media screen and (min-width: 1240px) {
     .shape-rectangle {
@@ -627,3 +598,5 @@ a:hover {
         width: 25%;
     }
 }
+
+/* End of the desktop breakpoint */

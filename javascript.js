@@ -29,13 +29,5 @@ const flkty = new Flickity( elem, {
   autoPlay: true,
 });
 
-
-
-// Scroll  
-
-
-
-
-
 }); 
 // End of doc ready
