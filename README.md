@@ -12,14 +12,12 @@ v1.002/Featured Section Paragraph and Heading Styling Updated
 
 2.0/Typeface and Font sizes Matching Design Requirements Padding and Spacing Matching Design Requirements
 v2.001/Typeface and Padding Added For Hero and About Section
-v2.002/ Fixed Category Section Footings Padding and Borders
+v2.002/ Fixed Category Section Font Padding and Borders
+v2.003/Fixed Errors
 
 ## Future Versions
-
-
-v3.001/Remove Border from Product section
-v4.0/Add Fixed Header for Mobile, Tablet and Desktop and Misc Fixes
-v5.0/Add icon to cart icon that shows number of clicks on products added to cart
+3.0/Add Fixed Header for Mobile, Tablet and Desktop and Misc Fixes
+4.0/Add icon to cart icon that shows number of clicks on products added to cart
 
 
 ## Project title
