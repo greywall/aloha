@@ -13,7 +13,8 @@ v1.002/Featured Section Paragraph and Heading Styling Updated
 2.0/Typeface and Font sizes Matching Design Requirements Padding and Spacing Matching Design Requirements
 v2.001/Typeface and Padding Added For Hero and About Section
 v2.002/ Fixed Category Section Font Padding and Borders
-v2.003/Fixed Errors
+v2.003/Fixed Syntax Errors in HTML and CSS
+V2.004/Fixed Footer Link Hover Color
 
 ## Future Versions
 3.0/Add Fixed Header for Mobile, Tablet and Desktop and Misc Fixes
