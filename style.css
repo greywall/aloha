@@ -63,7 +63,7 @@ body {
 .main-nav li {
     display: inline-block;
     font-size: 1rem;
-    padding: 15px;
+    padding: 5px;
     font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -72,7 +72,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 15px;
+    padding: 0px 5px;
 }
 
 .logo-image {
@@ -590,6 +590,12 @@ a:hover {
     }
     .featured-section a {
         font-size: 2.4rem;
+    }
+    .main-nav li {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 15px;
+        font-family: 'Raleway', Arial, sans-serif;
     }
 }
 
