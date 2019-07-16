@@ -1,6 +1,5 @@
-/* Extra Reset */
-
 /* This helps with flex box and spacing */
+
 * {
     /* border: 1px dashed black !important; */
     /*The code above can be turned on and off to create borders for different sections for testing.*/
@@ -18,7 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0 auto;
 }
@@ -26,7 +24,6 @@ body {
 .control-maxwidth {
     max-width: 1240px;
 }
-
 
 /* typography   */
 
@@ -63,7 +60,7 @@ body {
 .main-nav li {
     display: inline-block;
     font-size: 1rem;
-    padding: 5px;
+    padding: 15px 8px;
     font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -81,7 +78,6 @@ body {
 }
 
 .logo-image img {
-    /* max-width: 120px; */
     width: 120px;
     height: 50px;
 }
@@ -93,7 +89,6 @@ body {
 }
 
 .nav-container {
-    /* align-self: flex-end; */
     flex-basis: 100%;
     justify-content: center;
     text-align: center;
@@ -148,6 +143,7 @@ img {
 }
 
 /* This is for the About container section */
+
 .title-container {
     text-align: center;
     color: black;
@@ -155,6 +151,7 @@ img {
 }
 
 /* Update Section - Change the background */
+
 .update-message {
     margin: 0 auto;
     padding: 0px 5px;
@@ -166,7 +163,6 @@ img {
     max-width: 720px;
     margin: 0 auto;
     padding-top: 20px;
-    /* padding-bottom: 10px; */
 }
 
 .update-section {
@@ -175,15 +171,14 @@ img {
     text-align: center;
     color: white;
     height: 340px;
-    /* border-bottom: white 4px; */
     border-style: solid;
     border-width: 0px 0px 8px 0px;
 }
 
 .form-holder {
     margin: 0 auto;
-    width: 60%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 400px;
     position: relative;
 }
 
@@ -194,7 +189,7 @@ input[type=submit] {
     color: white;
     padding: .55rem .65rem;
     position: absolute;
-    top: 3px;
+    top: 4px;
     right: 3px;
 }
 
@@ -238,12 +233,12 @@ input[type=email] {
 }
 
 /* Footer Section */
+
 .footer-social a {
     text-decoration: none;
     color: white;
     font-family: 'Raleway', Arial, sans-serif;
 }
-
 
 .footer-social span {
     display: none;
@@ -285,7 +280,7 @@ a:hover {
     font-size: 2.5rem;
     margin: 0 0 1.5rem 0;
     font-family: 'Playfair Display', Arial, sans-serif;
-    }
+}
 
 .about-message, .update-message {
     font-size: 1.15rem;
@@ -303,7 +298,7 @@ a:hover {
     flex-wrap: wrap;
     color: white;
     font-size: 1.5rem;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -311,13 +306,12 @@ a:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/mens-category.jpg) no-repeat 50%;
     height: 35vh;
     width: 25vw;
-        background-size: cover;
+    background-size: cover;
     order: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-basis: 100%;
-    
 }
 
 .trends-featured {
@@ -359,7 +353,7 @@ a:hover {
 .bags-featured {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 100%), url(images/bags-category.jpg) no-repeat;
     height: 35vh;
-    /* width: 25vw; */
+    width: 25vw;
     background-size: cover, cover;
     order: 5;
     display: flex;
@@ -384,14 +378,17 @@ a:hover {
     border-style: solid;
     border-width: 0px 0px 4px 0px;
 }
+
 .trends-featured, .sale-featured {
     border-style: solid;
     border-width: 4px 4px 4px 0px;
 }
+
 .glasses-featured, .bags-featured {
     border-style: solid;
     border-width: 4px 0px 4px 4px;
 }
+
 .womens-featured {
     border-style: solid;
     border-width: 4px 0px 0px 0px;
@@ -405,6 +402,7 @@ a:hover {
 .featured-section a:hover {
     color: #f5ebc6;
 }
+
 /* Product Section */
 
 .featured-product-category, .featured-product-name, .featured-product-price {
@@ -416,7 +414,6 @@ a:hover {
     font-size: .75rem;
     font-weight: 100;
     text-transform: uppercase;
-
 }
 
 .featured-product-name {
@@ -437,16 +434,17 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
-
 .carousel-cell {
-    width: 100%;
     text-align: center;
+    width: 100%;
     padding: 2rem 1rem 2rem 1rem;
     font-family: 'Raleway', Arial, sans-serif;
     font-weight: 200;
 }
 
-
+.main-carousel {
+    width: 100%;
+}
 
 /* For the Tablet width breakpoint*/
 
@@ -543,18 +541,41 @@ a:hover {
         border-style: solid;
         border-width: 4px 0px 0px 4px;
     }
+    .main-carousel {
+        width: 100%;
+    }
 }
-
-}
-
-/* media query example */
 
 @media screen and (min-width: 600px) {
     .carousel-cell {
-        /* width: 10%; */
+        width: 50%;
+        padding: 1rem 0rem 1rem 0rem;
     }
-    .secondary-carousel {
-        width: 25%;
+    .main-nav li {
+        padding: 1px 5px;
+    }
+    .form-holder {
+        margin: 0 auto;
+        width: 70%;
+        max-width: 400px;
+        position: relative;
+    }
+    input[type=submit] {
+        border: none;
+        border-radius: 35px;
+        background-color: #e2574c;
+        color: white;
+        padding: .55rem .65rem;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+    input[type=email] {
+        border: none;
+        border-radius: 35px;
+        color: black;
+        padding: 12px;
+        width: 100%;
     }
 }
 

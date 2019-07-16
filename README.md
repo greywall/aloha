@@ -13,11 +13,13 @@ v2.001/Typeface and Padding Added For Hero and About Section
 v2.002/Fixed Category Section Font Padding and Borders
 v2.003/Fixed Syntax Errors in HTML and CSS
 V2.004/Fixed Footer Link Hover Color
-v2.005/ CSS Cleanup - Remove Unused sections and commented out code
+v2.005/CSS Cleanup - Remove Unused sections and commented out code
+v2.006/CSS Cleanup - Nav Width Fix for narrow mobile device
+v2.007/Fixed Carousel Display for Tablet and padding on submit form for mobile display
 
 ## Future Versions
-v2.005/ Reorganize CSS Cleanup to increase readability
-v2.006/ Fix Carousel display for tablet view
+v2.00x/ Reorganize CSS Cleanup to increase readability
+v2.00x/ Fix Carousel display for tablet view
 **3.0/**
 Add Fixed Header for Mobile, Tablet and Desktop and Misc Fixes
 **4.0/**
